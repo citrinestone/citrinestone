@@ -4,6 +4,9 @@
 <title>CITRINESTONE</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,36 +19,37 @@
 <!-- Navbar (sit on top) -->
   <div class="w3-bar w3-container" id="myNavbar">
     <a href="index.html"><img src="img/logo.jpg"></a>
-    <a href="index.html" class="logo w3-padding w3-xxlarge">CITRINE STONE<span>GENERAL MANPOWER SERVICES, INC.</span></a>
+    <a href="index.html" class="logo">CITRINE STONE<span><br>GENERAL MANPOWER SERVICES, INC.</span></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="index.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top" >HOME</a>
-      <a href="services.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top"> SERVICES</a>
-      <a href="about.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top"> ABOUT</a>
+      <a href="index.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top" >
+      <i class="fa fa-home" aria-hidden="true"></i>HOME</a>
+      <a href="services.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top"> <i class="fa fa-wrench"></i>SERVICES</a>
+      <a href="about.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top">
+      <i class="fa fa-address-card"></i>ABOUT</a>
       <a href="contact.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
-
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
-  <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+<nav class="sidebar w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar"><h6>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-red">Close X</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-green w3-animate-zoom"><i class="fa fa-home "></i> HOME</a>
+  <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-green w3-animate-zoom"><i class="fa fa-wrench"></i> SERVICES</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-green w3-animate-zoom" ><i class="fa fa-address-card"></i> ABOUT</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-green w3-animate-zoom"><i class="fa fa-envelope"></i> CONTACT</a>
 </nav>
 
 <section class="contactmain">
        
                 
-                <aside>
+                <aside class="infoborder">
                   <div class="info">
                       <h1>CONTACT INFORMATION</h1>                
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -113,7 +117,7 @@ function w3_close() {
 }
 </script>
 <footer>
-       <p>Copyright &copy 2020 Citrine Stone Man Power Services, Inc.</p>
+       <p>Copyright &copy 2020 Citrine Stone General Manpower Services, Inc.</p>
 </footer>
 </body>
 </html>

@@ -1,4 +1,6 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
   height: 100%;
@@ -22,9 +24,7 @@ body, html {
 	height: 50px; 
 	cursor: pointer;
 	margin-bottom: 10px;
-	margin-left: 20px;
-
-	
+	margin-left: 20px;	
 }
 .logo {
 	text-decoration: none;
@@ -32,12 +32,21 @@ body, html {
 	font-family: "Tangerine", serif;
 	color:  #783703;
 	letter-spacing: 3px;
-	
-
+	font-size: 36px;
+	padding: 15px;
 }
 span{
 	color:#052b2b;
 	font-size:8px;
+	position: absolute;
+	left: 15%;
+	top:5%;
+
+}
+.sidebar
+{
+	height: 40%;
+
 }
 .nav{
 	text-decoration: none;
@@ -59,6 +68,7 @@ footer{
  	background-color: orange;
  	padding: 2px;
  	color: #eee;
+
  }
  footer p{
 
@@ -80,8 +90,13 @@ footer{
 	box-shadow: 0 3px 3px 3px;
 	margin-top: 20px;
 	margin-right: 20px;
+	text-align: center;
 
 
+}
+
+.main .container{
+	margin-left: 50px;
 }
 .main .clients h1{
 
@@ -91,25 +106,13 @@ footer{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 26px;
 }
-.main aside{
-	float: right;
-
-}
-
-.main .mainservices{
-	float:left;
-	width: 70%;
-}
-.mainservices{
-	margin-left: 20px;
-}
 .mainservices p{
-	text-align: justify;
-
+	margin: 0 50px 0 50px;
 }
+
 .mainservices h1{
 	background-color:#e5e8e8;
-	margin-top:20px;
+	margin-top:10px;
 	text-align: center;
 	font-family: alesand, Helvetica, sans-serif;
 	color: #ff4c00;
@@ -125,12 +128,13 @@ footer{
 /*ABOUT STYLE*/
 .aboutmain .profilelogo h1{
 	background-color:#e5e8e8;
-	margin-top:20px;
+	margin-top:10px;
 	text-align: center;
 	font-family: alesand, Helvetica, sans-serif;
 	color: #ff4c00;
-	font-size: 36px;
-	font-weight: 800;
+	font-size: 30px;
+	font-weight: 700;
+	
 }
 .aboutmain .flexabout{
 	margin:0px 50px 0px 50px; 
@@ -147,7 +151,6 @@ footer{
 .aboutmain .mission p{
 	padding: 10px;
 	color: #35424a;
-	border-radius: 5px;
 	font-size: 18px;
 	text-align: center;
 	text-align: justify;	
@@ -156,7 +159,6 @@ footer{
 .aboutmain .company p{
 	padding: 10px;
 	color: #35424a;
-	border-radius: 5px;
 	font-size: 18px;
 	text-align: justify;
 
@@ -189,17 +191,13 @@ footer{
 	color: #00468b;
 	font-weight: 900;
 	box-shadow: 10px;
-	 text-shadow: 2px 2px;
+	text-shadow: 2px 2px;
 }
 .map{
 	margin-top: 20px;
 	margin-left: 50px;
 }
 
-.contact{
-
-	padding: 20px;
-}
 .contactmain aside{
 	float: right;
 	border-color: coral;
@@ -210,4 +208,74 @@ footer{
 	border-radius: 5px;
 
 }
+
+@media only screen and (max-width: 812px ){
+/*HEADER AND FOOTER*/
+ footer p{
+
+ 	margin-top: 10px;
+ 	font-size: 12px;
+ }
+
+.w3-bar img{
+	width: 80px;
+	height: 50px; 
+	cursor: pointer;
+	margin:0;
+	padding: 0;
+}
+.logo {
+	text-decoration: none;
+	font-weight: 900;
+	font-family: "Tangerine", serif;
+	color:  #783703;
+	letter-spacing: 3px;
+	font-size: 24px;
+	
+}
+span{
+	color:#052b2b;
+	font-size:8px;
+	position: absolute;
+	top:20px;
+	margin-left: 50px;
+
+}
+
+	/*ABOUT*/
+.aboutmain .flexabout{
+	margin:0px 5px 0px 5px; 
+}
+
+/*CONTACT*/
+.contactmain aside{
+	float: left;
+
+}
+
+.info h1{
+
+	color: #00468b;
+	font-weight: 700;
+	text-shadow: 2px 2px gray;
+	font-size: 22px;
+	text-align: center
+}
+.info{
+	font-size: 16px;
+}
+.infoborder{
+	margin-left: 20px;
+}
+.contactmain .map iframe{
+	margin-top: 10px;
+	margin-left: -30px;
+	width: 320px;
+}
+.contactmain img{
+	width: 350px;
+	margin-left:10px;
+}
+}
+
 
