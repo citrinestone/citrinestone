@@ -50,6 +50,29 @@
         <div class="profilelogo">
           <h1>COMPANY PROFILE</h1>
         </div>
+        <div class="certlink">
+          <button class="certbtn w3-orange w3-text-red">Click Here to  
+          View Certificate</button>
+        </div>
+
+        <div class="bgmodal">
+          <div class="mainmodal">
+            <div class="logo">
+              <h1>CERTIFICATES</h1>
+              <button class="close-modal">&times;</button>
+            </div>
+            <div class="certimg">
+              <div class="w3-content w3-display-container">
+              <img class="mySlides" src="img/cert1.jpg">
+              <img class="mySlides" src="img/cert2.jpg">
+              <img class="mySlides" src="img/cert3.jpg">
+             
+              <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+            </div>
+          </div>
+        </div>
           <div class="flexabout">
             <div class="company">
               <h1>A BRIEF HISTORY</h1>
@@ -85,6 +108,7 @@
       </div>
 
 
+
 <script>
 
 
@@ -104,6 +128,46 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+// MODAL DISPLAY
+
+var certBtn = document.querySelector('.certbtn');
+var bgModal = document.querySelector('.bgmodal');
+var closemodal =document.querySelector('.close-modal');
+
+  certBtn.addEventListener('click',function(){
+
+        bgModal.classList.add('modal-active');
+  });
+    closemodal.addEventListener('click',function(){
+      bgModal.classList.remove('modal-active');
+
+    });
+  // window.onclick = function(event){
+
+  //   if(event.target == closemodal){
+
+  //     bgModal.style.display = "none";
+  //   }
+  // }
 </script>
 <footer>
        <p>Copyright &copy 2020 Citrine Stone General Manpower Services, Inc.</p>
