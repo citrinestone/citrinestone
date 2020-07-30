@@ -313,6 +313,27 @@ span{
 .aboutmain .flexabout{
 	margin:0px 5px 0px 5px; 
 }
+.mainmodal{
+	width: 90%;
+	height: auto;
+}
+
+.bgmodal .mainmodal .logo h1{	
+	margin: 0;
+	padding: 0;
+	margin-right: 50px;
+}
+
+.certimg .mySlides{
+	width: 100%;
+	margin-left: 0;
+	padding: 15px;
+
+}
+.bgmodal{
+
+	width: 100%;
+}
 
 /*CONTACT*/
 .contactmain aside{
