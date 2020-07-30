@@ -179,6 +179,11 @@ footer{
 	visibility: visible;
 	opacity: 1;
 }
+ .mainmodal .btnnxt button{
+	margin-right: 20%;
+	margin-left: 20%;
+
+ }
 
 .mainmodal{
 
@@ -316,12 +321,16 @@ span{
 .mainmodal{
 	width: 90%;
 	height: auto;
+	background-color: orange;
 }
 
 .bgmodal .mainmodal .logo h1{	
 	margin: 0;
 	padding: 0;
 	margin-right: 50px;
+}
+.bgmodal .mainmodal .logo{
+	border-bottom: #4E595E solid 5px;
 }
 
 .certimg .mySlides{
@@ -330,10 +339,16 @@ span{
 	padding: 15px;
 
 }
-.bgmodal{
 
-	width: 100%;
-}
+.mainmodal .btnnxt button{
+	margin-right: 0;
+	margin-left: 0;
+
+ }
+.bgmodal {
+
+width: 100%;
+}	
 
 /*CONTACT*/
 .contactmain aside{
