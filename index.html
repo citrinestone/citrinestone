@@ -45,8 +45,20 @@
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-orange w3-animate-zoom"><i class="fa fa-envelope"></i> CONTACT</a>
 </nav>
 
+    <div class="hiring">
+
+      <button class="hiringbtn w3-text-orange w3-xlarge w3-padding w3-animate-zoom w3-hover-text-blue">View Hiring</button>
+    </div>
+
+    <div class="homebgmodal">
+        <div class="homemainmodal">
+          
+          <h1>We dont have Hiring as of now due to Pandemic.</h1>
+          <button class="modalclose w3-blue w3-text-orange w3-border-blue ">Close</button>
+        </div>
+    </div>
 <script>
-// Toggle between showing and hiding the sidebar when clicking the menu icon
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
 function w3_open() {
@@ -61,6 +73,20 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+   //HOME MODAL
+
+var hiringBtn = document.querySelector('.hiringbtn');
+var homebgModal = document.querySelector('.homebgmodal');
+var modalClose =document.querySelector('.modalclose');
+
+  hiringBtn.addEventListener('click',function(){
+
+        homebgModal.classList.add('modal-active');
+  });
+    modalClose.addEventListener('click',function(){
+      homebgModal.classList.remove('modal-active');
+
+    });
 </script>
 <footer>
        <p>Copyright &copy 2020 Citrine Stone General Manpower Services, Inc.</p>
