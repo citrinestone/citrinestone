@@ -106,24 +106,32 @@ footer{
 	visibility: visible;
 	opacity: 1;
 }
-.homebgmodal h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 28px;
-	color: red;
+.homebgmodal h6{
 	text-align: center;
-	font-weight: bold;
+	color: blue;
+	font-size: 20px;
+}
+.homebgmodal .position {
+	color: black;
+	background-color: orange;
+	font-size: 16px;
+	border-radius: 5px;
+	text-transform: lowercase;
+	margin-left: 10px;
+
 
 }
+.homebgmodal .position a{
+	text-decoration: none;
+	
+}
+
 .homemainmodal{
 	position: relative;
 	background: white;
 	width: 50%;
 	height: 80%;
 	border-radius: 5px;
-	display: flex;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .modalclose{
 	position: absolute;
@@ -352,6 +360,13 @@ footer{
 
 @media only screen and (max-width: 812px ){
 /*HEADER AND FOOTER*/
+
+.menu {
+	position: absolute;
+	top:10px;
+	right: -5px;
+
+}
  footer p{
 
  	margin-top: 10px;
@@ -362,7 +377,7 @@ footer{
 	width: 80px;
 	height: 50px; 
 	cursor: pointer;
-	margin:0;
+	margin:10px 0 10px 0px;
 	padding:0;
 
 }
@@ -373,36 +388,35 @@ footer{
 	color:  #783703;
 	font-size: 24px;
 	position: relative;
+	margin-left: -15px;
 	
 }
 span{
 	color:#052b2b;
-	font-size:8px;
+	font-size:7px;
+	letter-spacing: 0.1em;
 	position: absolute;
 	top:25px;
-	left: 5px;
+	left: 50px;
 
 }
 	/*HOME*/
-
-.homebgmodal h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: red;
-	text-align: center;
-	font-weight: bold;
-
+.homemainmodal h6{
+	font-size: 16px;
 }
+.homemainmodal .position{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .homemainmodal{
 	position: relative;
 	background: white;
 	width: 90%;
 	height: 50%;
 	border-radius: 5px;
-	display: flex;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
 }
 
 	/*ABOUT*/
@@ -473,5 +487,8 @@ width: 100%;
 	margin-left:10px;
 }
 }
+
+
+
 
 
