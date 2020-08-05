@@ -44,50 +44,25 @@
   <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-orange w3-animate-zoom" ><i class="fa fa-address-card"></i> ABOUT</a>
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-orange w3-animate-zoom"><i class="fa fa-envelope"></i> CONTACT</a>
 </nav>
+  <main class="mainbody">
+
+    <div class="citrinelogo">
+        <img src="img/logo.jpg">
+    
+    </div>
 
     <div class="hiring">
 
-      <button class="hiringbtn w3-text-orange w3-xlarge w3-padding w3-animate-zoom w3-hover-text-blue">View Hiring</button>
+      <button class="hiringbtn w3-text-orange w3-xlarge w3-padding w3-animate-zoom w3-hover-text-blue"><a href="hiring.html">Jobs Available HERE!</a></button>
+    </div>
+  
+  </main>
+    <div class="fblink">
+     <a href="https://www.facebook.com/profile.php?id=100009253256224"><i class="fa fa-facebook w3-blue w3-xxlarge w3-padding w3-round-xxlarge" style="position: absolute; top:50%;"></i></a>
     </div>
 
-    <div class="homebgmodal">
-        <div class="homemainmodal">
-          <h6>Click the button to contact in messenger</h6>
-          <button class="position"><a href="https://www.facebook.com/profile.php?id=100009253256224">Promodiser/Sales personel</a></button>
-          
-          <button class="modalclose w3-blue w3-text-orange w3-border-blue ">Close</button>
-        </div>
-    </div>
-<script>
-  // Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-   //HOME MODAL
-
-var hiringBtn = document.querySelector('.hiringbtn');
-var homebgModal = document.querySelector('.homebgmodal');
-var modalClose =document.querySelector('.modalclose');
-
-  hiringBtn.addEventListener('click',function(){
-
-        homebgModal.classList.add('modal-active');
-  });
-    modalClose.addEventListener('click',function(){
-      homebgModal.classList.remove('modal-active');
-
-    });
+    
+<script src="style.js">
 </script>
 <footer>
        <p>Copyright &copy 2020 Citrine Stone General Manpower Services, Inc.</p>
