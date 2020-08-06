@@ -368,19 +368,14 @@ footer{
  	margin-bottom: 10px;
   }
  .info{
-	text-align: justify-all;
 	font-size: 20px;
 
-
 }	 
-.info table .email{
-	text-decoration: underline;
-}
-.info table .fb{
-	text-decoration: underline;
-}
-.info table td{
+
+.info table .info_details{
 	font-weight: bold;
+	text-decoration: underline;
+
 }
 .info h1{
 
@@ -450,7 +445,7 @@ span{
 	letter-spacing: 0.1em;
 	position: absolute;
 	top:25px;
-	left: 30px;
+	left: 55px;
 
 }
 	/*HIRING*/
@@ -542,7 +537,7 @@ width: 100%;
 	text-align: center
 }
 .info{
-	font-size: 16px;
+	font-size: 12px;
 }
 .infoborder{
 	margin-left: 20px;
