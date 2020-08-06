@@ -283,15 +283,13 @@ footer{
 	margin-right: 30%;
 	
 }
-.bgmodal .certimg img{
+/*.bgmodal .certimg img{
 	cursor: pointer;
 	transition: transform 2s;
 }
 .bgmodal .certimg img:hover{
 	transform: scale(2);
-	
-
-}
+}*/
 .modal-active{
 	visibility: visible;
 	opacity: 1;
