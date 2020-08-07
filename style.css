@@ -78,14 +78,36 @@ footer{
 
 .hiring_list{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+}
+.hiring_list .container_hiring{
+	margin:auto;
+	width: auto;
+	border:3px solid #9CB0A3;
+	height:auto; 
+	padding: 10px;
+	grid-column: 1 / span 2; 
+	border-radius: 10px;
+	display: none;
+}
+#close{
+	 float: right;
+	 color: #fff;
+	 font-size: 18px;
+	 font-weight:900;
+	 width: 90px;
+	 height: 40px;
+	 border-radius: 50%;
+	 background-color: #DD4C4F;
+	 letter-spacing: 0em;
 
 }
 
 
+
  .hiring_list .position{
  	width: auto;
- 	height: auto;
+ 	height: 80%;
  	border-color: #ebc565;
  	border-style: solid;
  	border-radius: 20px;
@@ -93,10 +115,11 @@ footer{
  	display: grid;
  	grid-template-columns: auto auto;
  	padding: 10px;
- 	grid-template-rows: 50px 50px 50px 50px;
+ 	grid-template-rows: auto;
  	box-shadow: 2px 2px 2px 2px #363330;
 
  }
+
   .hiring_list .position h5{
   	color:#032f70;
   	font-weight: bolder;
@@ -118,9 +141,11 @@ footer{
  	outline: none;
 
    }
-   .hiring_list .position1 button{
-   	margin-top: 10px;
+   .hiring_list .position button a{
+   	text-decoration: none;
    }
+
+  
 
    /*.hiring_list .position1 .tooltiptext{
    	visibility: hidden;

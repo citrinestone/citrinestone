@@ -47,15 +47,34 @@
 </nav>
   <main class="hiring_list">
       <div class="position">  
-              <h5>Promodiser/Sales Personnel</h5>
-            <div class="position1">
-              <button class="viewtooltip">VIEW</button>
-            <!--   <span class="tooltiptext">TO BE FOLLOW..</span> -->
-            </div>
+        <h5>Promodiser/Sales Personnel</h5>        
+        <button id="myBtn">VIEW</button>
+       <div id="display_hiring" class="container_hiring" >
+                  <p>To Be Assign in:
+                      -AYALA CENTER CEBU
+                      -METRO COLON</p>
+                 <div class="benefits">
+                   1.Minimum Rate Plus 25.00 Allowance
+                   2.Plus incentives
+                   3.SSS, PHILHEALTH, PAG-IBIG
+                 </div>     
+              <button id="close">CLOSE</button>
+          </div>      
       </div>
   </main>
 
-<script src="style.js">
+<script>
+  var btn = document.getElementById("myBtn");
+  var view = document.getElementById("display_hiring");
+  var closing = document.getElementById("close");
+  btn.onclick = function(){
+    view.style.display = "block";
+  }
+  closing.onclick = function(){
+    view.style.display = "none";
+  }
+  
+  
 </script>
 <footer>
        <p>Copyright &copy 2020 Citrine Stone General Manpower Services, Inc.</p>
