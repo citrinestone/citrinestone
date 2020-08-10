@@ -49,7 +49,7 @@
       <div class="position">  
         <h5>Promodiser/Sales Personnel</h5>        
         <button id="myBtn">VIEW</button>
-       <div id="display_hiring" class="container_hiring" >
+       <div id="display_hiring" class="container_hiring">
                   <p>To Be Assign in:
                       -AYALA CENTER CEBU
                       -METRO COLON</p>
@@ -58,21 +58,63 @@
                    2.Plus incentives
                    3.SSS, PHILHEALTH, PAG-IBIG
                  </div>     
-              <button id="close">CLOSE</button>
+              <button class="close" id="close">CLOSE</button>
           </div>      
+
+           <h5>BAGGER</h5>        
+          <button id="promo">VIEW</button>
+            <div id="display_promo" class="container_promo">
+                  <p>To Be Assign in:
+                      -MANDAUE FOAM</p>
+                 <div class="benefits">
+                   1.Minimum Rate Plus 25.00 Allowance
+                   2.Plus incentives
+                   3.SSS, PHILHEALTH, PAG-IBIG
+                 </div>   
+              <button class="close" id="close_prom">CLOSE</button>
+          </div>      
+
       </div>
+
   </main>
 
 <script>
-  var btn = document.getElementById("myBtn");
-  var view = document.getElementById("display_hiring");
-  var closing = document.getElementById("close");
+  var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+   var btn = document.getElementById("myBtn"),
+  view = document.getElementById("display_hiring"),
+  closing = document.getElementById("close"),
+
+  prom = document.getElementById("promo"),
+  dispro = document.getElementById("display_promo"),
+  close = document.getElementById("close_prom");
+
+
+    // promodiser/salespersonnel
   btn.onclick = function(){
     view.style.display = "block";
   }
   closing.onclick = function(){
     view.style.display = "none";
   }
+
+  // PROMO
+  prom.onclick = function(){
+    dispro.style.display = "block";
+  }
+
+  close.onclick = function(){
+    dispro.style.display = "none";
+  }
+  
   
   
 </script>

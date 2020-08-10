@@ -90,7 +90,17 @@ footer{
 	border-radius: 10px;
 	display: none;
 }
-#close{
+.hiring_list .container_promo{
+	margin:auto;
+	width: auto;
+	border:3px solid #9CB0A3;
+	height:auto; 
+	padding: 10px;
+	grid-column: 1 / span 2; 
+	border-radius: 10px;
+	display: none;
+}
+.hiring_list .position .close{
 	 float: right;
 	 color: #fff;
 	 font-size: 18px;
@@ -102,7 +112,6 @@ footer{
 	 letter-spacing: 0em;
 
 }
-
 
 
  .hiring_list .position{
@@ -145,28 +154,7 @@ footer{
    	text-decoration: none;
    }
 
-  
-
-   /*.hiring_list .position1 .tooltiptext{
-   	visibility: hidden;
-	width: auto;
-	height: 10%;
-	background-color: orange;
-	color: #fff;
-	text-align: center;
-	border-radius: 6px;
-	padding: 5px 0;
-	position: relative;
-  	z-index: 1;
-  	top:10%;
-   }
-   .hiring_list .position1:hover .tooltiptext{
-   	visibility: visible;
-   	font-size: 14px;
-   }*/
- 	/*INDEX*/
-
-.mainbody{
+  .mainbody{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -300,6 +288,7 @@ footer{
 	margin-top: -50px;
 	border-radius: 50%;
 	background-color: coral;
+	cursor: pointer;
 }
 
 .bgmodal .mainmodal h1{
@@ -308,13 +297,6 @@ footer{
 	margin-right: 30%;
 	
 }
-/*.bgmodal .certimg img{
-	cursor: pointer;
-	transition: transform 2s;
-}
-.bgmodal .certimg img:hover{
-	transform: scale(2);
-}*/
 .modal-active{
 	visibility: visible;
 	opacity: 1;
@@ -387,21 +369,49 @@ footer{
 /* 	CONTACT STYLE*/
 
 
-  .contactmain img{
-  	width: 500px;
- 	height: 350px; 
+ /* .contactmain img{
+  	width: 600px;
+ 	height: 450px; 
  	margin-bottom: 10px;
-  }
- .info{
-	font-size: 20px;
+  }*/
 
-}	 
+  .contactmain{
+  	display: grid;
+  	grid-template-columns:auto 500px;
+  
+
+  }
+  .contactmain .info{
+  	
+  }
+  .contactmain .info h4{
+  	letter-spacing: 0.1em;
+  	font-weight: bold;
+  }
+
+  .contactmain .map{
+ 	margin-top: 20px;
+  }
+
+   .contactmain .image_map{
+   
+   }
+   .contactmain .email_us{
+   
+   }
 
 .info table .info_details{
 	font-weight: bold;
 	text-decoration: underline;
 
 }
+.email_us label{
+	font-weight: bold;
+}
+/* .info{
+	font-size: 20px;
+
+}	 
 .info h1{
 
 	color: #00468b;
@@ -419,8 +429,8 @@ footer{
 	margin:auto;
 	padding: auto;
 }
-
-.contactmain aside{
+*/
+/*.contactmain aside {
 	float: right;
 	border-color: coral;
 	border-style: solid;
@@ -428,8 +438,29 @@ footer{
 	margin-right: 50px;
 	box-shadow: 0 2px 2px 2px;
 	border-radius: 5px;
+	width: auto;
+
+}*/
+/*.contactmain .email_us{
+	float: right;
+	width: 500px;
+ 	height: auto; 
+ 	margin-right: 50px; 
+ 	margin-top: -5%;
 
 }
+
+.contactmain .info{
+	float: right;
+	border-color: coral;
+	border-style: solid;
+	padding: 10px;
+	margin-right: 50px;
+	box-shadow: 0 2px 2px 2px;
+	border-radius: 5px;
+	width: auto;
+}*/
+
 
 @media only screen and (max-width: 1090px ){
 /*HEADER AND FOOTER*/
@@ -548,11 +579,30 @@ width: 100%;
 
 
 /*CONTACT*/
-.contactmain aside{
-	float: left;
+.contactmain {
+	display: grid;
+	grid-template-columns: auto;
 
 }
+.contactmain .map{
+	max-width: 400px;
+}
+.contactmain .map iframe{
+	max-width: 340px;
+	max-height: 300px;
+}
+.contactmain .info{
+  	
+  }
+  .contactmain .info h4{
+  	color: red;
+  }
 
+  .info table .info_details{
+	font-size: 10px;
+
+}
+/*
 .info h1{
 
 	color: #00468b;
@@ -578,7 +628,7 @@ width: 100%;
 }
 
 .contactmain .map p{
-	margin-left: -20px;
+	margin-left: -20px;*/
 
 	/*SERVICES*/
 
