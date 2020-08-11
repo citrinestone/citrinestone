@@ -44,26 +44,82 @@
   <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-orange w3-animate-zoom" ><i class="fa fa-address-card"></i> ABOUT</a>
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-orange w3-animate-zoom"><i class="fa fa-envelope"></i> CONTACT</a>
 </nav>
-  <main class="mainbody">
+                        <div class="hiring">
+                           <button class="hiringbtn w3-text-orange w3-xlarge w3-padding w3-animate-zoom w3-hover-text-blue"><a href="hiring.html">Jobs Available HERE!</a></button>
+                        </div>
+         <div class="mainbody">
+                  <div class="slideshow-container">
+                      <div class="img_style w3-animate-zoom">
+                        <div class="mySlides fade">
+                          
+                          <img src="img/img3.jpg">
+                          
+                        </div>
 
-    <div class="citrinelogo">
-        <img src="img/logo.jpg">
-    
-    </div>
+                        <div class="mySlides fade">
+                         
+                          <img src="img/img2.jpg">
+                          
+                        </div>
 
-    <div class="hiring">
+                        <div class="mySlides fade">
+                        
+                          <img src="img/img1.jpg">
+                         
+                        </div>
 
-      <button class="hiringbtn w3-text-orange w3-xlarge w3-padding w3-animate-zoom w3-hover-text-blue"><a href="hiring.html">Jobs Available HERE!</a></button>
-    </div>
-  
-  </main>
-    <div class="fblink">
-     <a href="https://www.facebook.com/profile.php?id=100009253256224"><i class="fa fa-facebook w3-blue w3-xxlarge w3-padding w3-round-xxlarge" style="position: absolute; top:50%;"></i></a>
-    </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    
-<script src="style.js">
+                        </div>
+                        <br>                       
+                   </div>
+                  <div class="msg_home">
+                    <h1>CITRINE STONE</h1>
+                      <p>It was in 2011 when CSGMSI was incorporated by family members with a vision to
+                    make the Company known as a prime provider of competent workforce and quality
+                    servicese</p>
+                  </div>
+                
+     </div>
+              <div class="fblink">
+               <a href="https://www.facebook.com/profile.php?id=100009253256224"><i class="fa fa-facebook w3-blue w3-xxlarge w3-padding w3-round-xxlarge" style="position: absolute; top:50%;"></i></a>
+              </div>
+
+<script>
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
 </script>
+
 <footer>
        <p>Copyright &copy 2020 Citrine Stone General Manpower Services, Inc.</p>
 </footer>

@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
  <!--  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+ <script data-cfasync="false" type="text/javascript"
+            src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
   
 </head>
 <body>
@@ -46,55 +48,89 @@
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-orange w3-animate-zoom"><i class="fa fa-envelope"></i> CONTACT</a>
 </nav>
 
-<section class="contactmain">
-       
-                
-                <aside class="infoborder">
-                  <div class="info">
-                      <h1>CONTACT INFORMATION</h1>   
-                      <table>  
-                         <tr>
-                            <td><i class="fa fa-phone" aria-hidden="true"></i>Tel:</td>
-                              <td>(032)238-2080</td>
-                        </tr>
-                         <tr>
-                            <td><i class="fa fa-mobile" aria-hidden="true"></i>SUN:</td>
-                            <td>09223680023</td>  
-                       </tr>
-                        <tr>
-                           <td><i class="fa fa-mobile" aria-hidden="true"></i>GLOBE:</td>
-                            <td>09265359738</td>   
-                        </tr>
-                        <tr>           
-                           <td><i class="fa fa-envelope-o" aria-hidden="true"></i>Email:</td>                
-                            <td class="email">citrinestone2018@yahoo.com</td>       
-                        </tr>
-                         <tr>
-                            <td><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook:</td>
-                            <td class="fb">citrinestone@yahoo.com</td>               
-                        </tr>
-                        
-                       
-                       
-                      
-                       
-                      </table>
-                    </div>
-                </aside>
+    <div class="contactmain w3-light-grey">
 
-              <div class="map">
-                <iframe width="500" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Esperanza%20Bldg%2C%20A.%20C.%20Cortes%20Ave%2C%20Ibabao%20Estancia%2C%20Mandaue%20Cit&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                <p>Door 1, Ground Floor, Esperanza Bldg., A.C. Cortes Avenue,Ibabao-Estancia, Mandaue City, 6014 Cebu</p>
-                  
-              
-              </div>
-                <img class="map" src="img/map.jpg" alt="map"> 
-        </div>
+                      <div class="map w3-container">
+                            <iframe width="800" height="800"  id="gmap_canvas" src="https://maps.google.com/maps?q=Esperanza%20Bldg%2C%20A.%20C.%20Cortes%20Ave%2C%20Ibabao%20Estancia%2C%20Mandaue%20Cit&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <p class="w3-blue w3-large">Door 1, Ground Floor, Esperanza Bldg., A.C. Cortes Avenue,Ibabao-Estancia,Mandaue City, 6014 Cebu</p>                
+                      </div>
+                        <div class="info w3-container">
+                            <h4 class="w3-xlarge w3-text-blue">CONTACT INFORMATION</h4>  
+                            <table class="w3-border w3-padding w3-hover-text-blue w3-bottombar w3-topbar w3-large">  
+                               <tr>
+                                  <td><i class="fa fa-phone" aria-hidden="true"></i>Telephone No</td>
+                                    <td class="info_details">(032)238-2080</td>
+                              </tr>
+                               <tr>
+                                  <td><i class="fa fa-mobile" aria-hidden="true"></i>SUN Number</td>
+                                  <td class="info_details">+63 922 368 0023</td>  
+                             </tr>
+                              <tr>
+                                 <td><i class="fa fa-mobile" aria-hidden="true"></i>GLOBE Number</td>
+                                  <td class="info_details">+63 926 535 9738</td>   
+                              </tr>
+                              <tr>           
+                                 <td><i class="fa fa-envelope-o" aria-hidden="true"></i>E-mail</td>                
+                                  <td class="info_details">citrinestone2018@yahoo.com</td>       
+                              </tr>
+                               <tr>
+                                  <td><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook Accnt.</td>
+                                  <td class="info_details">citrinestone@yahoo.com</td>               
+                              </tr>
+
+                            </table>     
+                            <div class="email_us w3-container w3-border w3-margin-top w3-bottombar w3-topbar w3-margin-bottom">
         
-</section>
+                    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+                     action="https://script.google.com/macros/s/AKfycbwULcIiEsUedxUJPk2CJvuHnZmtVlf6FunBpTYl/exec">
+
+                          <h4 class="w3-text-blue w3-xlarge">CONTACT US</h4>
+                          <p><label for="name">NAME:</label>
+                          <input class="w3-input w3-border" id="name" name="name"></p>
+
+                          <p><label for="email">Your Email Address:</label>
+                          <input class="w3-input w3-border" id="email" name="email" type="email" value=""
+                            required placeholder="your.name@email.com" ></p>
+
+                          <p><label for="contactnumber">PHONE NUMBER:</label>
+                          <input class="w3-input w3-border" id="contactnumber" name="contactnumber"></p>
+
+                          <p><label for="message">MESSAGE:</label>
+                          <textarea class="w3-input w3-border" id="message" name="message"></textarea></p>
+
+                           <button class="w3-blue w3-margin-bottom">
+                            <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+                    </form>
+                          
+                    <!-- Customise the Thankyou Message People See when they submit the form: -->
+                </div>                
+                        </div>
+      
+                  <div class="image_map w3-container">
+                  <!--   <img class="map" src="img/map.jpg" alt="map">  -->
+                  </div>
+                <!-- <div class="email_us w3-container">
+                    <form>
+                          <h4 class="w3-text-orange w3-xlarge">CONTACT US</h4>
+                          <p><label>NAME</label>
+                          <input class="w3-input w3-border" name="Name" type="text"></p>
+
+                          <p><label>EMAIL</label>
+                          <input class="w3-input w3-border" name="email" type="text"></p>
+                          <p><label>PHONE NUMBER</label>
+                          <input class="w3-input w3-border" name="phone" type="text"></p>
+                          <p><label>MESSAGE</label>
+                          <textarea class="w3-input w3-border" name="msg" type="text"></textarea></p>
+                           <input type="submit" value="Submit">
+                    </form>
+                </div -->
+                  
+    </div>
 
 
 <script src="style.js">
+ 
 </script>
 <footer>
        <p>Copyright &copy 2020 Citrine Stone General Manpower Services, Inc.</p>

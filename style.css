@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 body,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -40,7 +39,7 @@ span{
 	color:#052b2b;
 	font-size:8px;
 	position: absolute;
-	left: 15%;
+	left: 14%;
 	bottom: 10%;
 
 }
@@ -75,17 +74,100 @@ footer{
 
  	margin-top: 10px;
  }
+
+ 	/*HOME*/
+
+   .slideshow-container{
+    margin: 0px 70px;
+
+    }
+
+   .slideshow-container img{
+ 	width: 100%;
+    height: 450px;
+    border-radius: 10px;
+   }
+.mainbody{
+	 display: grid;
+	 grid-template-columns: 70% 30%; 
+	 }
+	 .img_style{
+	  border-radius: 10px;
+	  width: 100%;
+	  box-shadow: 5px;
+	  border: 0px solid;
+	  box-shadow: 0 4px 8px 0 rgba(35, 37, 41, 0.5), 0 6px 20px 0 rgba(35, 37, 41, 0.5);
+	  position: relative;
+	 }
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+ 	/* Position the "next button" to the right */
+.next {
+	right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+	/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+   background-color: red;
+}
  	/*HIRING*/
 
 .hiring_list{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+}
+.hiring_list .container_hiring{
+	margin:auto;
+	width: auto;
+	border:3px solid #9CB0A3;
+	height:auto; 
+	padding: 10px;
+	grid-column: 1 / span 2; 
+	border-radius: 10px;
+	display: none;
+}
+.hiring_list .container_promo{
+	margin:auto;
+	width: auto;
+	border:3px solid #9CB0A3;
+	height:auto; 
+	padding: 10px;
+	grid-column: 1 / span 2; 
+	border-radius: 10px;
+	display: none;
+}
+.hiring_list .position .close{
+	 float: right;
+	 color: #fff;
+	 font-size: 18px;
+	 font-weight:900;
+	 width: 90px;
+	 height: 40px;
+	 border-radius: 50%;
+	 background-color: #DD4C4F;
+	 letter-spacing: 0em;
+
 }
 
 
  .hiring_list .position{
  	width: auto;
- 	height: auto;
+ 	height: 80%;
  	border-color: #ebc565;
  	border-style: solid;
  	border-radius: 20px;
@@ -93,10 +175,11 @@ footer{
  	display: grid;
  	grid-template-columns: auto auto;
  	padding: 10px;
- 	grid-template-rows: 50px 50px 50px 50px;
+ 	grid-template-rows: auto;
  	box-shadow: 2px 2px 2px 2px #363330;
 
  }
+
   .hiring_list .position h5{
   	color:#032f70;
   	font-weight: bolder;
@@ -105,7 +188,7 @@ footer{
   }
    .hiring_list .position button{
    	font-family: "Tangerine", serif;
-   	margin-left: 20px;
+   	margin:auto;
    	color:coral;
    	letter-spacing: 0.5em;
    	background-color: rgba(237, 228, 166);
@@ -118,21 +201,9 @@ footer{
  	outline: none;
 
    }
- 	/*INDEX*/
-
-.mainbody{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	min-height: 80%;
-
-
-}
-.mainbody .citrinelogo img{
-	width: 400px;
-	height: 400px;
-
-}
+   .hiring_list .position button a{
+   	text-decoration: none;
+   }
 
 
  .hiring button{
@@ -254,6 +325,7 @@ footer{
 	margin-top: -50px;
 	border-radius: 50%;
 	background-color: coral;
+	cursor: pointer;
 }
 
 .bgmodal .mainmodal h1{
@@ -261,15 +333,6 @@ footer{
 	font-weight: bold;
 	margin-right: 30%;
 	
-}
-.bgmodal .certimg img{
-	cursor: pointer;
-	transition: transform 2s;
-}
-.bgmodal .certimg img:hover{
-	transform: scale(2);
-	
-
 }
 .modal-active{
 	visibility: visible;
@@ -340,626 +403,38 @@ footer{
 	text-align: center;
 
 }
-/* 	CONTACT STYLE*/
-
-
-  .contactmain img{
-  	width: 500px;
- 	height: 350px; 
- 	margin-bottom: 10px;
-  }
- .info{
-	text-align: justify-all;
-	font-size: 20px;
-
-
-}	 
-.info table .email{
-	text-decoration: underline;
-}
-.info table .fb{
-	text-decoration: underline;
-}
-.info table td{
-	font-weight: bold;
-}
-.info h1{
-
-	color: #00468b;
-	font-weight: 900;
-	box-shadow: 10px;
-	text-shadow: 2px 2px;
-}
-.map{
-	margin-top: 20px;
-	margin-left: 50px;
-}
-.contactmain .map p{
-	color: blue;
-	font-size: 18px;
-	margin:auto;
-	padding: auto;
-}
-
-.contactmain aside{
-	float: right;
-	border-color: coral;
-	border-style: solid;
-	padding: 10px;
-	margin-right: 50px;
-	box-shadow: 0 2px 2px 2px;
-	border-radius: 5px;
-
-}
-
-@media only screen and (max-width: 1090px ){
-/*HEADER AND FOOTER*/
-
-.menu {
-	position: absolute;
-	top:10px;
-	right: -5px;
-
-}
- footer p{
-
- 	margin-top: 10px;
- 	font-size: 12px;
- }
-
-.w3-bar img{
-	width: 80px;
-	height: 50px; 
-	cursor: pointer;
-	margin:10px 0 10px 0px;
-	padding:0;
-
-}
-.logo {
-	text-decoration: none;
-	font-weight: 900;
-	font-family: "Tangerine", serif;
-	color:  #783703;
-	font-size: 24px;
-	position: relative;
-	margin-left: -15px;
-	
-}
-span{
-	color:#052b2b;
-	font-size:7px;
-	letter-spacing: 0.1em;
-	position: absolute;
-	top:25px;
-	left: 30px;
-
-}
-	/*HIRING*/
-
-.hiring_list .position img{
-	width: 80%;
-	height: 50%;
-
-}
-	/*HOME*/
-
-.mainbody .citrinelogo img{
-	display: none;
-
-}
-.mainbody{
-	position: relative;
-}
-.hiring button{
-	position: absolute;
-	left: 0;
-	top:0;
-}
-
-/*.homemainmodal .position{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.homemainmodal{
-	position: relative;
-	background: white;
-	width: 90%;
-	height: 50%;
-	border-radius: 5px;
-
-}*/
-
-	/*ABOUT*/
-.aboutmain .flexabout{
-	margin:0px 5px 0px 5px; 
-}
-.mainmodal{
-	width: 90%;
-	height: auto;
-	border: orange solid 3px;
-	box-shadow: 2px 2px 3px 3px;
-}
-
-.bgmodal .mainmodal .logo h1{	
-	margin: 0;
-	padding: 0;
-	margin-right: 50px;
-}
-.bgmodal .mainmodal .logo{
-	border-bottom: none;
-}
-
-.certimg .mySlides{
-	width: 100%;
-	margin-left: 0;
-	padding: 15px;
-
-}
-
-.mainmodal .btnnxt button{
-	margin-right: 0;
-	margin-left: 0;
-	color: coral;
-	outline: none;
-
- }
-.bgmodal {
-
-width: 100%;
-}	
-
-
-/*CONTACT*/
-.contactmain aside{
-	float: left;
-
-}
-
-.info h1{
-
-	color: #00468b;
-	font-weight: 700;
-	text-shadow: 2px 2px gray;
-	font-size: 22px;
-	text-align: center
-}
-.info{
-	font-size: 16px;
-}
-.infoborder{
-	margin-left: 20px;
-}
-.contactmain .map iframe{
-	margin-top: 10px;
-	margin-left: -30px;
-	width: 320px;
-}
-.contactmain img{
-	width: 350px;
-	margin-left:10px;
-}
-
-.contactmain .map p{
-	margin-left: -20px;
-
-	/*SERVICES*/
-
-}
-.main .clients{
-	margin-left: -20px;
-	
-}
-.clients .client_logo{
-	transition: transform .3s;
-	cursor: pointer;
-
-}
-.clients .client_logo:hover{
-	transform: scale(1); 
-	-ms-transform: scale(3); 
-  	-webkit-transform: scale(3);
-  	height: 50%; 
-}
-}
-
-
-
-
-
-=======
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
-body,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-
-}
-
-/* Full height image header */
-.w3-bar .w3-button {
-  padding: 20px;
-
-}
-
-.w3-bar{
-	border-bottom: #ff4c00 3px solid;
-	background-color: #edded1;	
-	position: relative;
-}
-.w3-bar img{
-	width: 90px;
-	height: 50px; 
-	cursor: pointer;
-	margin-bottom: 10px;
-	margin-left: 20px;	
-}
-.logo {
-	text-decoration: none;
-	font-weight: 900;
-	font-family: "Tangerine", serif;
-	color:  #783703;
-	letter-spacing: 3px;
-	font-size: 36px;
-	padding: 15px;
-}
-span{
-	color:#052b2b;
-	font-size:8px;
-	position: absolute;
-	left: 15%;
-	bottom: 10%;
-
-}
-.sidebar
-{
-	height: 40%;
-
-}
-.nav{
-	text-decoration: none;
-	margin-right: 30px;
-	border-radius: 10px;
-	color:#ff4c00;
-	font-weight: 900;
-	letter-spacing: 1px;
-}
-.main{
-	min-height: 80vh;
-	margin-top: 5px;
-}
-
-footer{
- 	text-align: center;
- 	margin: 0;
- 	padding: 0;
- 	background-color: orange;
- 	padding: 2px;
- 	color: #eee;
-
- }
- footer p{
-
- 	margin-top: 10px;
- }
- 	/*HIRING*/
-
-.hiring_list{
-	display: flex;
-	justify-content: center;
-}
-
-
- .hiring_list .position{
- 	width: auto;
- 	height: auto;
- 	border-color: #ebc565;
- 	border-style: solid;
- 	border-radius: 20px;
- 	margin:50px;
- 	display: grid;
- 	grid-template-columns: auto auto;
- 	padding: 10px;
- 	grid-template-rows: 50px 50px 50px 50px;
- 	box-shadow: 2px 2px 2px 2px #363330;
-
- }
-  .hiring_list .position h5{
-  	color:#032f70;
-  	font-weight: bolder;
-  	margin-right: 20px
+  .contactmain{
+  	display: grid;
+  	grid-template-columns:auto 500px;
+  
 
   }
-   .hiring_list .position button{
-   	font-family: "Tangerine", serif;
-   	margin-left: 20px;
-   	color:coral;
-   	letter-spacing: 0.5em;
-   	background-color: rgba(237, 228, 166);
-   	border:none;
-   	border-radius: 50px;
-   	padding: auto;
- 	width: 100px;
- 	cursor: pointer;
- 	font-weight: bolder;
- 	outline: none;
+  .contactmain .info{
+  	
+  }
+  .contactmain .info h4{
+  	letter-spacing: 0.1em;
+  	font-weight: bold;
+  }
 
+  .contactmain .map{
+ 	margin-top: 20px;
+  }
+
+   .contactmain .image_map{
+   
    }
- 	/*INDEX*/
+   .contactmain .email_us{
+   
+   }
 
-.mainbody{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	min-height: 80%;
-
-
-}
-.mainbody .citrinelogo img{
-	width: 400px;
-	height: 400px;
-
-}
-
-
- .hiring button{
- 	border: none;
- 	background: none;
- 	cursor: pointer;
- 	font-size: 2em;
- 	text-decoration: underline;
- 	font-family: "Lobster", serif;
- 	outline: none;
- }
-
-/*SERVICES*/
-.clients img{
-
-	width: 100px;
-	height: 100px;
-	border-radius: 10px;
-}
-
-.clients .client_logo{
-	transition: transform .3s;
-	cursor: pointer;
-	padding: 5px;
-
-}
-.clients .client_logo:hover{
-	transform: scale(3); 
-	-ms-transform: scale(3); 
-  	-webkit-transform: scale(3); 
-}
-.main .clients{
-	width: 320px;
-	border-color: coral;
-	border-style: solid;
-	border-radius: 10px;
-	box-shadow: 0 3px 3px 3px;
-	margin-top: 20px;
-	margin-right: 20px;
-	text-align: center;
-}
-
-.main .container{
-	margin-left: 50px;
-}
-.main .clients h1{
-
-	text-align: center;
-	color:#00468b;
-	font-weight: 900px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 26px;
-}
-.mainservices p{
-	margin: 0 10px 0 10px;
-}
-
-.mainservices h1{
-	background-color:#e5e8e8;
-	margin-top:10px;
-	text-align: center;
-	font-family: alesand, Helvetica, sans-serif;
-	color: #ff4c00;
-	font-size: 30px;
-	font-weight: 700;
-}
-.mainservices p{
-	background-color:#e5e8e8;
-	padding: 10px;
-	box-shadow: 0 2px 3px 3px;
-}
-
-/*ABOUT STYLE*/
-.certlink{
-	margin-top: 20px;
-	margin-left: 20px;
-}
-.certlink button{
-	font-size: 1.5em;
-	cursor: pointer;
-	border: none;
- 	background: none;
- 	cursor: pointer;
- 	font-family: "Lobster", serif;
- 	font-size: 1.5em;
- 	text-decoration: underline;
- 	font-weight: 900;
- 	outline: none;
-}
-
-.bgmodal{
-	position: fixed;
-	top:0;
-	left: 0;
-	width: 100%;
-	height:100vh;
-	background-color: rgba(0,0,0,0.5);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s, opacity 0.5s;
-}
-
-.bgmodal .logo{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	height: 8vh;
-	border-bottom:orange solid 5px;
-}
-
-.close-modal{
-	border:none;
-	text-decoration: none;
-	font-size: 20px;
-	margin-right: -30px;
-	margin-top: -50px;
-	border-radius: 50%;
-	background-color: coral;
-}
-
-.bgmodal .mainmodal h1{
-	color:#ff4c00;
+.info table .info_details{
 	font-weight: bold;
-	margin-right: 30%;
-	
-}
-.bgmodal .certimg img{
-	cursor: pointer;
-	transition: transform 2s;
-}
-.bgmodal .certimg img:hover{
-	transform: scale(2);
-	
-
-}
-.modal-active{
-	visibility: visible;
-	opacity: 1;
-}
- .mainmodal .btnnxt button{
-	margin-right: 20%;
-	margin-left: 20%;
-
- }
-
-.mainmodal{
-
-	background-color: white;
-	width: 60%;
-	height: 90%;
-	border-radius: 5px;
-}
-.certimg .mySlides{
-	width: 90%;
-	margin-left: 40px;
-
-}
-
-.aboutmain .profilelogo h1{
-	background-color:#e5e8e8;
-	margin-top:10px;
-	text-align: center;
-	font-family: alesand, Helvetica, sans-serif;
-	color: #ff4c00;
-	font-size: 30px;
-	font-weight: 700;
-	
-}
-.aboutmain .flexabout{
-	margin:0px 50px 0px 50px; 
-}
-
-.aboutmain .company{
-	padding: 20px 20px 0px 20px;
-
-}
-.aboutmain .mission{
-	padding: 0px 20px 20px 20px;
-
-}
-.aboutmain .mission p{
-	padding: 10px;
-	color: #35424a;
-	font-size: 18px;
-	text-align: center;
-	text-align: justify;	
-
-}
-.aboutmain .company p{
-	padding: 10px;
-	color: #35424a;
-	font-size: 18px;
-	text-align: justify;
-
-}
-.aboutmain h1{
-	color: #00468b;
-	padding: 0;
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 26px;
-	text-align: center;
-
-}
-/* 	CONTACT STYLE*/
-
-
-  .contactmain img{
-  	width: 500px;
- 	height: 350px; 
- 	margin-bottom: 10px;
-  }
- .info{
-	text-align: justify-all;
-	font-size: 20px;
-
-
-}	 
-.info table .email{
 	text-decoration: underline;
+
 }
-.info table .fb{
-	text-decoration: underline;
-}
-.info table td{
+.email_us label{
 	font-weight: bold;
-}
-.info h1{
-
-	color: #00468b;
-	font-weight: 900;
-	box-shadow: 10px;
-	text-shadow: 2px 2px;
-}
-.map{
-	margin-top: 20px;
-	margin-left: 50px;
-}
-.contactmain .map p{
-	color: blue;
-	font-size: 18px;
-	margin:auto;
-	padding: auto;
-}
-
-.contactmain aside{
-	float: right;
-	border-color: coral;
-	border-style: solid;
-	padding: 10px;
-	margin-right: 50px;
-	box-shadow: 0 2px 2px 2px;
-	border-radius: 5px;
-
 }
 
 @media only screen and (max-width: 1090px ){
@@ -1001,45 +476,66 @@ span{
 	letter-spacing: 0.1em;
 	position: absolute;
 	top:25px;
-	left: 30px;
+	left: 50px;
 
 }
 	/*HIRING*/
 
-.hiring_list .position img{
-	width: 80%;
-	height: 50%;
+.hiring_list .position{
+	grid-template-columns: 80% 10%;
+	margin: 20px;
+
 
 }
+.hiring_list .position  h5{
+	font-size: 12px;
+	margin-left: 0px;
+
+}
+.hiring_list .position button{
+	letter-spacing: normal;
+	height: 30px;
+	width: 60px;
+	margin-left:-10px;
+	margin-top: 5px;
+	}
+
 	/*HOME*/
 
-.mainbody .citrinelogo img{
-	display: none;
+.mainbody{
+	display: block;
+	margin: 10px;
+}
+.slideshow-container img{
+	height: 350px;
+ 
+}
+.msg_home p{
+	padding: 5px;
+	margin: 5px;
+}
+.slideshow-container{
+	margin-left: 0px;
+	margin-right: auto;
 
 }
-.mainbody{
-	position: relative;
+ .img_style{
+ 	width: 100%;
+ }
+.msg_home h1{
+	display: none;
 }
-.hiring button{
+.fblink{
 	position: absolute;
+	top:50%;
+	
+}
+
+.hiring button{
 	left: 0;
 	top:0;
 }
 
-/*.homemainmodal .position{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.homemainmodal{
-	position: relative;
-	background: white;
-	width: 90%;
-	height: 50%;
-	border-radius: 5px;
-
-}*/
 
 	/*ABOUT*/
 .aboutmain .flexabout{
@@ -1082,11 +578,30 @@ width: 100%;
 
 
 /*CONTACT*/
-.contactmain aside{
-	float: left;
+.contactmain {
+	display: grid;
+	grid-template-columns: auto;
 
 }
+.contactmain .map{
+	max-width: 400px;
+}
+.contactmain .map iframe{
+	max-width: 340px;
+	max-height: 300px;
+}
+.contactmain .info{
+  	
+  }
+  .contactmain .info h4{
+  	color: red;
+  }
 
+  .info table .info_details{
+	font-size: 10px;
+
+}
+/*
 .info h1{
 
 	color: #00468b;
@@ -1096,7 +611,7 @@ width: 100%;
 	text-align: center
 }
 .info{
-	font-size: 16px;
+	font-size: 12px;
 }
 .infoborder{
 	margin-left: 20px;
@@ -1112,7 +627,7 @@ width: 100%;
 }
 
 .contactmain .map p{
-	margin-left: -20px;
+	margin-left: -20px;*/
 
 	/*SERVICES*/
 
@@ -1138,4 +653,3 @@ width: 100%;
 
 
 
->>>>>>> e1145e6844aa7a662c9cec9271427c11f4fe856b

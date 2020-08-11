@@ -48,5 +48,4 @@ var closemodal =document.querySelector('.close-modal');
 
     });
 
-
     
