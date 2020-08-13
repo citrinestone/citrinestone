@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,6 +79,10 @@
   </main>
 
 <script>
+  // Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
   var mySidebar = document.getElementById("mySidebar");
 
 function w3_open() {
@@ -124,130 +127,3 @@ function w3_open() {
 </footer>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-<title>CITRINESTONE</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
- <!--  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
-  
-</head>
-<body>
-
-<!-- Navbar (sit on top) -->
-  <div class="w3-bar w3-container" id="myNavbar">
-    <a href="index.html"><img src="img/logo.jpg"></a>
-    <a href="index.html" class="logo">CITRINE STONE<span><br>GENERAL MANPOWER SERVICES, INC.</span></a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top" >
-      <i class="fa fa-home" aria-hidden="true"></i>HOME</a>
-      <a href="services.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top"> <i class="fa fa-wrench"></i>SERVICES</a>
-      <a href="about.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top">
-      <i class="fa fa-address-card"></i>ABOUT</a>
-      <a href="contact.html" class="nav w3-bar-item w3-text w3-hover-text-blue w3-hover-orange w3-animate-zoom w3-margin-top"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="menu w3-bar-item w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="sidebar w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar"><h6>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-red">Close X</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-orange w3-animate-zoom"><i class="fa fa-home "></i> HOME</a>
-  <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-orange w3-animate-zoom"><i class="fa fa-wrench"></i> SERVICES</a>
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-orange w3-animate-zoom" ><i class="fa fa-address-card"></i> ABOUT</a>
-  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-orange w3-animate-zoom"><i class="fa fa-envelope"></i> CONTACT</a>
-</nav>
-  <main class="hiring_list">
-      <div class="position">  
-        <h5>Promodiser/Sales Personnel</h5>        
-        <button id="myBtn">VIEW</button>
-       <div id="display_hiring" class="container_hiring">
-                  <p>To Be Assign in:
-                      -AYALA CENTER CEBU
-                      -METRO COLON</p>
-                 <div class="benefits">
-                   1.Minimum Rate Plus 25.00 Allowance
-                   2.Plus incentives
-                   3.SSS, PHILHEALTH, PAG-IBIG
-                 </div>     
-              <button class="close" id="close">CLOSE</button>
-          </div>      
-
-           <h5>BAGGER</h5>        
-          <button id="promo">VIEW</button>
-            <div id="display_promo" class="container_promo">
-                  <p>To Be Assign in:
-                      -MANDAUE FOAM</p>
-                 <div class="benefits">
-                   1.Minimum Rate Plus 25.00 Allowance
-                   2.Plus incentives
-                   3.SSS, PHILHEALTH, PAG-IBIG
-                 </div>   
-              <button class="close" id="close_prom">CLOSE</button>
-          </div>      
-
-      </div>
-
-  </main>
-
-<script>
-  var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-   var btn = document.getElementById("myBtn"),
-  view = document.getElementById("display_hiring"),
-  closing = document.getElementById("close"),
-
-  prom = document.getElementById("promo"),
-  dispro = document.getElementById("display_promo"),
-  close = document.getElementById("close_prom");
-
-
-    // promodiser/salespersonnel
-  btn.onclick = function(){
-    view.style.display = "block";
-  }
-  closing.onclick = function(){
-    view.style.display = "none";
-  }
-
-  // PROMO
-  prom.onclick = function(){
-    dispro.style.display = "block";
-  }
-
-  close.onclick = function(){
-    dispro.style.display = "none";
-  }
-  
-  
-  
-</script>
-<footer>
-       <p>Copyright &copy 2020 Citrine Stone General Manpower Services, Inc.</p>
-</footer>
-</body>
-</html>
->>>>>>> 505ec70702fcf9a516e6e004fea9aed55b811b4b
